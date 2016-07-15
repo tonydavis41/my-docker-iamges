@@ -1,4 +1,4 @@
 FROM busybox:latest
 MAINTAINER Tony <tony@justsomestuff.co.uk>
-RUN mkdir /var/lib/mysql && mkdir /var/www/html
+RUN mkdir -p /var/lib/mysql && mkdir -p /var/www/html
 VOLUME ["/var/lib/mysql", "/var/www/html"]
